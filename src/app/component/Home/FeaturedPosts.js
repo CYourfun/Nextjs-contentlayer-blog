@@ -1,6 +1,7 @@
 import { sortBlogs } from "@/src/utils";
 import React from "react";
 import BlogLayoutOne from "../Blog/BlogLayoutOne";
+import BlogLayoutTwo from "../Blog/BlogLayoutTwo";
 
 const FeaturedPosts = ({ blogs }) => {
   const sortedBlogs = sortBlogs(blogs);
@@ -15,10 +16,10 @@ const FeaturedPosts = ({ blogs }) => {
           <BlogLayoutOne blog={sortedBlogs[2]} />
         </article>
         <article className="col-span-1 row-span-1 relative">
-          blog layout 2
+          <BlogLayoutTwo blog={sortedBlogs[3]} />
         </article>
         <article className="col-span-1 row-span-1 relative">
-          blog layout 2
+          <BlogLayoutTwo blog={sortedBlogs[4]} />
         </article>
       </div>
     </section>
